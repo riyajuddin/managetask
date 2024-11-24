@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+.tableBodyTr {
+  background-color: white;
+  transition: background-color 0.3s ease;
+  padding: 10px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  text-align: left;
+  border-bottom: 1px solid lightgray;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.tableBodyTr:hover {
+  background-color: #ebebeb;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.customSelectList {
+  padding: 0px;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  list-style: none;
+  margin: 0px;
+  background-color: white;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.02),
+    0 3px 8px rgba(0, 0, 0, 0.14);
+  border-radius: 15px;
+}
+
+.customSelectList>li {
+  padding: 10px;
+  border-bottom: 1px solid #ebebeb;
+  margin: 0px !important;
+}
+
+.customSelectList>li:hover {
+  background-color: #ebebeb;
+}
+
+
+/* Add border-radius to the top of the first item */
+.customSelectList>li:first-child {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+/* Add border-radius to the bottom of the last item */
+.customSelectList>li:last-child {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom: none;
+  /* Remove extra bottom border for cleaner look */
+}
+
+.mainPopUp {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #0000003d;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  z-index: 1;
 }
 
-.App-link {
-  color: #61dafb;
+.popupWrapper {
+  background-color: white;
+  border-radius: 15px;
+  padding: 50px;
+  max-width: 500px;
+  min-width: 25%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sortingWrapper {
+  cursor: pointer;
+}
+
+.sortingWrapperInner {
+  display: flex;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.sortingWrapper:hover {
+  background-color: #ebebeb;
+
 }

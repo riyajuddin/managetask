@@ -92,7 +92,7 @@ export const AddTask = () => {
 
   return (
     <div>
-       <p style={styles.taskManagerTitle}>Task Manager</p>
+       <p style={styles.taskManagerTitle}>Personal Task Manager</p>
       <div style={styles.inputWrapper}>
         <label style={styles.taskTitle}>Task Title <span style={{color:"#e91e63"}}>*</span></label>
          <input

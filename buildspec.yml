@@ -1,7 +1,7 @@
 version: 0.2
 
 phases:
-  pre-build:
+  install:
     commands:
       - echo "Installing dependencies..."
       - npm install

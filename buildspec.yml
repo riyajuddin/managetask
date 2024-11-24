@@ -1,9 +1,7 @@
 version: 0.2
 
 phases:
-  install:
-    runtime-versions:
-      nodejs: 16 # Specify Node.js version
+  pre-build:
     commands:
       - echo "Installing dependencies..."
       - npm install
@@ -11,11 +9,8 @@ phases:
     commands:
       - echo "Building the React app..."
       - npm run build
-  post_build:
-    commands:
-      - echo "Build completed. Deploying to S3..."
-      - aws s3 sync build/ s3://www.alushak.xyz --delete
 artifacts:
   files:
     - "**/*"
+  discard-paths: no
   base-directory: build

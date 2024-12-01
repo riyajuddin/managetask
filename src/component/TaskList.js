@@ -215,19 +215,19 @@ const toggleSort = (array, property, order) => {
               <th style={styles.th} className="sortingWrapper" onClick={()=>{ handleSort("taskTitle")}}>
                   <div className="sortingWrapperInner">
                     <div>Task</div>
-                    <img alt="image" src={Arrow} style={{width: "20px"}}/>
+                    <img alt="arrow icon" src={Arrow} style={{width: "20px"}}/>
                 </div>
               </th>
               <th style={styles.th} className="sortingWrapper" onClick={()=>{ handleSort("priority")}}>
                 <div className="sortingWrapperInner">
                     <div>Priority</div>
-                    <img alt="image" src={Arrow} style={{width: "20px"}}/>
+                    <img alt="arrow second icon" src={Arrow} style={{width: "20px"}}/>
                 </div>
               </th>
               <th style={styles.th} className="sortingWrapper" onClick={()=>{ handleSort("taskStatus")}}>
                   <div className="sortingWrapperInner">
                     <div>Status</div>
-                    <img  alt="image" src={Arrow} style={{width: "20px"}}/>
+                    <img  alt="arrow third icon" src={Arrow} style={{width: "20px"}}/>
                 </div>
               </th>
               <th style={styles.th}>
